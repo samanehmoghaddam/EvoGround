@@ -1,34 +1,112 @@
+# ====================================
 # Python
+# ====================================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.so
 
-# Environments
+# Virtual environments
 .env
 .venv/
-env/
 venv/
+env/
 
-# Editors
-.vscode/
-.idea/
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
 
-# Data & artifacts
-data/
-outputs/
-wandb/
-mlruns/
-dvc/cache/
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
 
-# Model weights
-*.bin
+# Wheels
+*.whl
+
+# ====================================
+# Data & Models 
+# ====================================
+
+# Raw & processed datasets (never commit these)
+data/raw/
+data/processed/
+data/monthly_splits/
+
+# Model weights & checkpoints
 *.pt
 *.pth
+*.ckpt
+*.bin
+*.safetensors
 
-# Jupyter
+# HuggingFace caches
+.cache/
+huggingface/
+transformers_cache/
+
+# Experiment outputs
+outputs/
+results/
+reports/figs/
+reports/logs/
+
+# ====================================
+# Experiments & MLOps
+# ====================================
+
+# Weights & Biases logs
+wandb/
+
+# MLflow tracking
+mlruns/
+
+# Hydra outputs (if you choose Hydra later)
+multirun/
+logs/
+
+# DVC cache
+.dvc/
+.dvc/cache/
+.dvc/tmp/
+
+# Prefect flows
+.prefect/
+
+# ====================================
+# Jupyter Notebooks
+# ====================================
 .ipynb_checkpoints/
+*.ipynb_convert/
 
-# OS
+# ====================================
+# Editors / IDE / OS
+# ====================================
+.vscode/
+.idea/
+*.swp
+
+# macOS
 .DS_Store
+
+# Linux / misc
+*.out
+*.log
+
+# ====================================
+# Docker
+# ====================================
+docker/
+*.dockerfile
+*.img
+
+# ====================================
+# Secrets / configs
+# ====================================
+# (keep config templates, ignore actual secrets)
+*.env
+*.secret
+*.key
+*.pem
