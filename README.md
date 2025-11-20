@@ -34,10 +34,10 @@ EvoGround/
 │   ├── environment_min.yml     # minimal environment
 │   └── environment_eval.yml    # inference/evaluation env
 │
-├── containers/                 # For reproducibility, optional
+├── containers/                 # For reproducibility
 │   ├── Dockerfile
 │   ├── evoground.sif           # (not committed, ignored)
-│   └── README.md               # how to build singularity image
+│   └── README.md               
 │
 ├── data/
 │   ├── raw/                    # large data -> ignored
