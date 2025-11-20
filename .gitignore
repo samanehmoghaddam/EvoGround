@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Environments
+.env
+.venv/
+env/
+venv/
+
+# Editors
+.vscode/
+.idea/
+
+# Data & artifacts
+data/
+outputs/
+wandb/
+mlruns/
+dvc/cache/
+
+# Model weights
+*.bin
+*.pt
+*.pth
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
