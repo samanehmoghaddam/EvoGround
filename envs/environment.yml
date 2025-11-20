@@ -1,0 +1,58 @@
+name: evoground
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+
+  # --- PyTorch GPU ---
+  - pytorch
+  - pytorch-cuda=12.1
+
+  # --- Core compute ---
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+
+  # --- NLP / LLM ---
+  - pip
+  - pip:
+      - transformers
+      - datasets
+      - accelerate
+      - sentencepiece
+      - tiktoken
+
+      # PEFT / LoRA
+      - peft
+      - bitsandbytes
+
+      # Vector search + novelty detection
+      - faiss-gpu
+      - umap-learn
+      - hdbscan
+      - bertopic
+
+      # Agentic orchestration
+      - langgraph
+      - pydantic
+
+      # Serving
+      - fastapi
+      - uvicorn
+      - vllm
+
+      # Experiment tracking
+      - wandb
+      - mlflow
+
+      # Pipeline / QA / Observability
+      - prefect
+      - great-expectations
+      - sentry-sdk
+      - prometheus-client
+
+      # Utilities
+      - python-dotenv
